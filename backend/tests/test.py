@@ -12,7 +12,7 @@ class TestAccountDetails(APITestCase):
     def setUp(self):
         # Create a user for testing
 
-        self.user = User.objects.create_user(first_name='rirst_name', last_name='last_name', email='test.gmail.com',
+        self.user = User.objects.create_user(first_name='first_name', last_name='last_name', email='test.gmail.com',
                                              password='password', company='company', position='position')
 
     def test_get_account_details_authenticated(self):
